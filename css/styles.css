@@ -60,6 +60,10 @@ body {
     font-size: 2rem;
 }
 
+section {
+    overflow: hidden;
+}
+
 /* ----- TYPOGRAPHY ----- */
 
 h1 {
@@ -73,11 +77,13 @@ h2 {
 h3 {
     font-size: 3.2rem;
     font-weight: bold;
+    margin-bottom: 3rem;
 }
 
 h4 {
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 3rem;
 }
 
 .nav li a,
@@ -85,7 +91,13 @@ h4 {
 .nav li a:active {
     font-size: 2.4rem;
     color: #c42730;
-    text-decoration: none; 
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .4s border-bottom ease;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #c42730;
 }
 
 .nav li a.active {
@@ -96,11 +108,16 @@ h4 {
     font-size: 2.5rem;
 }
 
+p {
+    margin-bottom: 3rem;
+}
+
 /* ----- GRID ----- */
 
 .container {
     max-width: 1400px;
     width: 90%;
+    margin: 0 auto;
 }
 
 .flex-row {
@@ -110,7 +127,7 @@ h4 {
 }
 
 .col {
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .col-12 {
@@ -144,15 +161,23 @@ h4 {
 }
 
 .bg-accent-red {
-    background-color: #c42730; 
+    background-color: #c42730 !important; 
 }
 
 .bg-accent-blue {
-    background-color: #009fe3;
+    background-color: #009fe3 !important;
+}
+
+section.section-border-red {
+    border-top: 1rem solid #c42730; 
 }
 
 .text-light {
     color: white;
+}
+
+.serif {
+    font-family: 'Times';
 }
 
 
@@ -190,7 +215,7 @@ header {
 
 .header-text {
     color: white;
-    max-width: 800px;
+    max-width: 80rem;
     text-align: center;
     margin-top: 2rem;
 }
@@ -202,4 +227,73 @@ header {
 .header-text h1 {
     margin-bottom: 0;
     margin-top: 2rem;
+}
+
+nav {
+    height: 9.5rem;
+    background-color: #f9f9f9;
+}
+
+.nav-container {
+    max-width: 88rem;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.intro-container {
+    max-width: 950px;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.intro-container p {
+    margin-bottom: 5rem;
+}
+
+#learn {
+    background-color: #f9f9f9;
+    padding-top: 9rem;
+    position: relative;
+}
+
+.text-container {
+    max-width: 98rem;
+}
+
+.text-container ul {
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.family-img-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 1;
+    position: relative;
+    bottom: -1rem;
+}
+
+.baseline-background {
+    height: 20rem;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#knowing {
+    padding-top: 9rem;
+    padding-bottom: 6rem;
 }
