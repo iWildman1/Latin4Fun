@@ -247,7 +247,7 @@ section {
 }
 
 header {
-    height: 80vh;
+    height: 85vh;
     max-height: 80rem;
     min-height: 45rem;
     background-image: url(../img/banner.jpg);
