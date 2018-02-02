@@ -27,16 +27,16 @@
         <nav class="nav">
             <div class="container nav-container">
                 <ul class="nav-list">
-                    <li><a class="active" href="#">Learning Latin</a></li>
-                    <li><a href="#">Knowing Latin</a></li>
-                    <li><a href="#">Teaching</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a data-link="learn" href="#learn">Learning Latin</a></li>
+                    <li><a data-link="knowing" href="#knowing">Knowing Latin</a></li>
+                    <li><a data-link="teaching" href="#teaching">Teaching</a></li>
+                    <li><a data-link="about" href="#about">About Me</a></li>
+                    <li><a data-link="resources" href="#resources">Resources</a></li>
+                    <li><a data-link="contact" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <section id="introduction">
+        <section id="introduction" class="no-pad-top no-pad-bottom">
             <div class="container intro-container">
                 <p class="lead">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -47,7 +47,7 @@
                 <img src="img/signature.jpg" alt="">
             </div>
         </section>
-        <section id="learn" class="section-border-red">
+        <section id="learn" class="section-border-red no-pad-bottom" data-spy="learn">
             <div class="container text-container">
                 <h3>Why learn latin?</h3>
                 <p>
@@ -79,7 +79,7 @@
             </div>
             
         </section>
-        <section id="knowing">
+        <section id="knowing" data-spy="knowing">
             <div class="container text-container">
                 <div class="flex-row">
                     <div class="col col-6">
@@ -116,5 +116,121 @@
                 </div>
             </div>
         </section>
+        <div class="accent-separator bg-accent-gold text-light">
+            <div class="separator-content center">
+                <h2>fortuna favet fortibus</h1>
+                <h2 class="italic normal-weight serif">fortune favours the strong (Terence)</h1>
+            </div>
+        </div>
+        <section id="teaching" data-spy="teaching">
+            <div class="container text-container">
+                <div class="flex-row">
+                    <div class="col col-6">
+                        <h3>What and How I Teach</h3>
+                        <p>
+                            I generally tutor individuals or small groups at my home office. 
+                        </p>
+                        <p>
+                            I am rather old school in that I like to teach a really thorough grounding of grammar.  However, the emphasis is always on reading Latin, lots and lots of reading Latin! 
+
+                        </p>
+                        <p>
+                            And hopefully it is lots of fun as well although it may be challenging at times.  I always tailor my teaching to suit my learners’ needs and wishes so that you only go as far and as fast as you wish to go.
+                        </p>
+                        <p>
+                            I base my teaching on the Cambridge Latin Course books which are widely used in schools but I have found them to be just as enjoyable for adults to use and they are based on reading.
+                        </p>
+                    </div>
+                    <div class="col col-6">
+                        <img class="img-fluid" src="img/reading-2.jpg" alt="A person reading Latin">
+                    </div>
+                </div>
+            </div>
+            <div class="baseline-background bg-accent-red"></div>
+            <div class="book-img-container">
+                <img class="book-img" src="img/book-parallax.png" alt="A book with Latin text">
+            </div>
+        </section>
+        <section id="about" data-spy="about">
+            <div class="container text-container">
+                <div class="flex-row">
+                    <div class="col col-6">
+                        <h3>A Bit About Me</h3>
+                        <p>
+                            I have always had a great passion for the classics of the ancient world as well as languages in general. 
+                        </p>
+                        <p>
+                            I have been studying and reading Latin for over 30 years at school and University where I did my M.A. dissertation on the Carmina Burana, a collection of poems in mediaeval Latin and German.
+
+                        </p>
+                        <p>
+                            I have a level 3 Certificate in Education and Training and started teaching about a year ago.  
+                        </p>
+                        <h3>Costs</h3>
+                        <p>
+                            Sessions for individuals are £25 per session (1 hour) but there are reductions for groups and some concessions are available.
+                        </p>
+                    </div>
+                    <div class="col col-6">
+                        <img class="img-fluid" src="img/person.jpg" alt="A person">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="accent-separator bg-accent-gold text-light">
+            <div class="separator-content center">
+                <h2>Nam et ipsa scientia potestas est </h1>
+                <h2 class="italic normal-weight serif">For knowledge is itself power (Bacon) </h1>
+            </div>
+        </div>
+        <section id="resources" data-spy="resources">
+            <div class="container text-container">
+                <div class="flex-row">
+                    <div class="col col-6">
+                        <h3>Resources</h3>
+                        <p>
+                            If you are interested in Latin and want to have a bash at it yourself, there are two books available that I would recommend for adult readers that you might like to look at.
+                        </p>
+                        <p>
+                            Both books are good introductions to give you a taste of the language and some Roman history and culture, but there is very little reading practice in them.  If you’ve read these and want to learn more and read more actual Latin then call me for a chat and sign up for a taster session.
+                        </p>
+                    </div>
+                    <div class="col col-3">
+                        <img class="img-fluid" src="img/book-1.jpg" alt="A person">
+                    </div>
+                    <div class="col col-3">
+                        <img class="img-fluid" src="img/book-2.jpg" alt="A person">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="contact" data-spy="contact">
+            <div class="container text-container">
+                <div class="flex-row">
+                    <div class="col col-6">
+                        <h3>Contact</h3>
+                        <p class="contact-item">
+                            karen@karenboddey.com
+                        </p>
+                        <p class="contact-item">
+                            Tel: 07921 860626
+                        </p>
+                        <p class="copyright-info">
+                            Copyright © 91c Counselling 2018
+                        </p>
+                    </div>
+                    <div class="col col-6">
+                        <div class="statue-container">
+                            <img class="contact-statue" src="img/statue.png" alt="Image of a statue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </html>

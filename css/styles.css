@@ -138,10 +138,18 @@ p {
     flex: 0 0 50%;
 }
 
+.col-3 {
+    flex: 0 0 25%;
+}
+
 /* ----- UTILITIES ----- */
 
 .bold, strong {
     font-weight: bold;
+}
+
+.normal-weight {
+    font-weight: normal;
 }
 
 .italic {
@@ -168,6 +176,10 @@ p {
     background-color: #009fe3 !important;
 }
 
+.bg-accent-gold {
+    background-color: #cbc5b0 !important;
+}
+
 section.section-border-red {
     border-top: 1rem solid #c42730; 
 }
@@ -180,8 +192,26 @@ section.section-border-red {
     font-family: 'Times';
 }
 
+.no-pad-top {
+    padding-top: 0;
+}
+
+.no-pad-bottom {
+    padding-bottom: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
 
 /* ----- GENERAL STYLES ----- */
+
+section {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    position: relative;
+}
 
 .top-bar-container {
     text-align: center;
@@ -232,6 +262,11 @@ header {
 nav {
     height: 9.5rem;
     background-color: #f9f9f9;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: 0.4s border-bottom ease;
+    border-bottom: 1rem solid transparent;
 }
 
 .nav-container {
@@ -249,6 +284,10 @@ nav {
     height: 100%;
 }
 
+.nav-border-red {
+    border-bottom: 1rem solid #c42730;  
+}
+
 .intro-container {
     max-width: 950px;
     text-align: center;
@@ -261,12 +300,11 @@ nav {
 
 #learn {
     background-color: #f9f9f9;
-    padding-top: 9rem;
     position: relative;
 }
 
 .text-container {
-    max-width: 98rem;
+    max-width: 110rem;
 }
 
 .text-container ul {
@@ -277,7 +315,7 @@ nav {
 .family-img-container {
     width: 100%;
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 12rem;
     z-index: 1;
     position: relative;
     bottom: -1rem;
@@ -293,7 +331,66 @@ nav {
     z-index: 0;
 }
 
-#knowing {
+.accent-separator {
+    padding: 5rem;
+}
+
+.accent-separator .separator-content h2 {
+    margin: 0;
+    padding: 0 0 1.5rem 0;
+}
+
+.accent-separator .separator-content h2:last-of-type {
+    margin: 0;
+    padding: 0;
+}
+
+.book-img-container {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 12rem;
+}
+
+.book-img {
+    z-index: 2;
+    margin-bottom: -46rem;
+    max-width: 1400px;
+    width: 90%;
+}
+
+footer {
     padding-top: 9rem;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
+    background-color: #272727;
+    color: white;
+    margin-top: 4rem;
+}
+
+footer h3 {
+    margin-bottom: 5rem;
+}
+
+.contact-item {
+    font-size: 4.2rem;
+    margin-bottom: 5rem;
+}
+
+.copyright-info {
+    margin-bottom: 0;
+    font-size: 2.2rem;
+}
+
+.statue-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contact-statue {
+    position: absolute;
+    bottom: -4rem;
+    max-width: 100%;
+    right: 0;
 }
