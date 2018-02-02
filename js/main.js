@@ -1,10 +1,13 @@
 var navBarActive = false;
+var mobileNavActive = false;
 
 var nav         = document.querySelector("nav");
+var navList     = document.querySelector(".nav-list");
 var header      = document.querySelector("header");
 var sections    = document.querySelectorAll("section");
 var footer      = document.querySelector("footer");
 var links       = document.querySelectorAll(".nav-list li a")
+var navBtn      = document.querySelector(".mobile-nav-bars");
 
 var sectionArray = [];
 var sectionObj   = {};
@@ -22,6 +25,26 @@ var sectionObj   = {};
         sectionObj[e.id] = e.offsetTop;
     });
     delete sectionObj[""];
+
+    navBtn.addEventListener("click", function() {
+        if (!mobileNavActive) {
+            navList.classList.add("nav-list-open");
+            document.querySelector("#menu-open").classList.add("hidden");
+            document.querySelector("#menu-close").classList.remove("hidden");
+            document.querySelector("body").style.overflow = "hidden";
+            mobileNavActive = true;
+        } else {
+            closeMobileNav();
+        }
+    });
+
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function() {
+            if (mobileNavActive) {
+                closeMobileNav();
+            }
+        })
+    }
     
 
     document.addEventListener("scroll", function() {
@@ -51,6 +74,14 @@ var sectionObj   = {};
     });
     
 })();
+
+function closeMobileNav() {
+    navList.classList.remove("nav-list-open");
+    document.querySelector("#menu-open").classList.remove("hidden");
+    document.querySelector("#menu-close").classList.add("hidden");
+    document.querySelector("body").style.overflow = "visible";
+    mobileNavActive = false;
+}
 
 // Select all links with hashes
 $('a[href*="#"]')

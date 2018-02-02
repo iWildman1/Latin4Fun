@@ -8,6 +8,8 @@
 
         <title>Latin4Fun - Learn today!</title>
 
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
         <link rel="stylesheet" href="css/styles.css" type="text/css">
 
     </head>
@@ -21,7 +23,7 @@
 
             <div class="header-text">
                 <h1> Docendo disco, scribendo cogito: </h1>
-                <h1> I learn by teaching, think by writing. </h1>
+                <h1> I learn by teaching, think by writing.</h1>
             </div>
         </header>
         <nav class="nav">
@@ -34,6 +36,15 @@
                     <li><a data-link="resources" href="#resources">Resources</a></li>
                     <li><a data-link="contact" href="#contact">Contact</a></li>
                 </ul>
+                <div class="mobile-nav-container">
+                    <div class="mobile-nav-toggle">
+                        <div class="mobile-nav-bars">
+                            Menu <i id="menu-open" class="fas fa-bars"></i> <i id="menu-close" class="fas fa-window-close hidden"></i>
+                        </div>
+                            
+                    </div>
+                </div>
+                
             </div>
         </nav>
         <section id="introduction" class="no-pad-top no-pad-bottom">
@@ -82,7 +93,7 @@
         <section id="knowing" data-spy="knowing">
             <div class="container text-container">
                 <div class="flex-row">
-                    <div class="col col-6">
+                    <div class="col col-6 break-sm">
                         <h3>You Already Know Latin</h3>
                         <p>
                             It might surprise you how much Latin you already know and use, possibly without even realizing it.  
@@ -94,7 +105,7 @@
                             The truth is, the more you study Latin, the more you realise just how many words in English are derived from Latin, although many have come via (there’s another Latin loan!) Norman French due to the Conquest. 
                         </p>
                     </div>
-                    <div class="col col-6">
+                    <div class="col col-6 break-sm">
                         <h4>There are many abbreviations we use regularly</h4>
                         <ul>
                             <li>etc. = et cetera = the rest, the others</li>
@@ -125,7 +136,7 @@
         <section id="teaching" data-spy="teaching">
             <div class="container text-container">
                 <div class="flex-row">
-                    <div class="col col-6">
+                    <div class="col col-6 break-lg">
                         <h3>What and How I Teach</h3>
                         <p>
                             I generally tutor individuals or small groups at my home office. 
@@ -141,7 +152,7 @@
                             I base my teaching on the Cambridge Latin Course books which are widely used in schools but I have found them to be just as enjoyable for adults to use and they are based on reading.
                         </p>
                     </div>
-                    <div class="col col-6">
+                    <div class="col col-6 break-lg">
                         <img class="img-fluid" src="img/reading-2.jpg" alt="A person reading Latin">
                     </div>
                 </div>
@@ -154,7 +165,7 @@
         <section id="about" data-spy="about">
             <div class="container text-container">
                 <div class="flex-row">
-                    <div class="col col-6">
+                    <div class="col col-6 break-md">
                         <h3>A Bit About Me</h3>
                         <p>
                             I have always had a great passion for the classics of the ancient world as well as languages in general. 
@@ -171,7 +182,7 @@
                             Sessions for individuals are £25 per session (1 hour) but there are reductions for groups and some concessions are available.
                         </p>
                     </div>
-                    <div class="col col-6">
+                    <div class="col col-6 break-md">
                         <img class="img-fluid" src="img/person.jpg" alt="A person">
                     </div>
                 </div>
@@ -185,7 +196,7 @@
         </div>
         <section id="resources" data-spy="resources">
             <div class="container text-container">
-                <div class="flex-row">
+                <div class="flex-row row-break-lg">
                     <div class="col col-6">
                         <h3>Resources</h3>
                         <p>
@@ -206,7 +217,7 @@
         </section>
         <footer id="contact" data-spy="contact">
             <div class="container text-container">
-                <div class="flex-row">
+                <div class="flex-row no-wrap">
                     <div class="col col-6">
                         <h3>Contact</h3>
                         <p class="contact-item">
@@ -219,7 +230,7 @@
                             Copyright © 91c Counselling 2018
                         </p>
                     </div>
-                    <div class="col col-6">
+                    <div class="col col-6 statue-col">
                         <div class="statue-container">
                             <img class="contact-statue" src="img/statue.png" alt="Image of a statue">
                         </div>
