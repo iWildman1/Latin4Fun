@@ -33,6 +33,10 @@ var sectionObj   = {};
             document.querySelector("#menu-close").classList.remove("hidden");
             document.querySelector("body").style.overflow = "hidden";
             mobileNavActive = true;
+
+            if (!navBarActive) {
+                window.scroll(0, sections[0].offsetTop);
+            }
         } else {
             closeMobileNav();
         }
