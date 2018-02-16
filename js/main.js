@@ -15,6 +15,7 @@ var sectionObj   = {};
 //Setup Event Listeners & Set up sections array
 
 (function() {
+
     sectionArray.push(header);
     for (var i = 0; i < sections.length; i++) {
         sectionArray.push(sections[i]);

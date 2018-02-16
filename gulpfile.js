@@ -14,6 +14,7 @@ gulp.task('sync', function() {
 gulp.task('watch', ['sync'], function() {
     gulp.watch('./css/*.css', ['css']);
     gulp.watch('./*.html').on('change', bs.reload);
+    gulp.watch('./js/*.js').on('change', bs.reload);
 });
 
 gulp.task('css', function() {
