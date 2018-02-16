@@ -1,0 +1,23 @@
+{
+  "name": "latin4fun",
+  "version": "1.0.0",
+  "description": "Latin4Fun Build System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iWildman1/Latin4Fun.git"
+  },
+  "author": "Daniel Wildman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iWildman1/Latin4Fun/issues"
+  },
+  "homepage": "https://github.com/iWildman1/Latin4Fun#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}
