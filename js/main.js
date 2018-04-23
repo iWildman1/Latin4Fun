@@ -12,6 +12,8 @@ var navBtn      = document.querySelector(".mobile-nav-bars");
 var sectionArray = [];
 var sectionObj   = {};
 
+var controller = new ScrollMagic.Controller();
+
 //Setup Event Listeners & Set up sections array
 
 (function() {
@@ -87,6 +89,39 @@ function closeMobileNav() {
     document.querySelector("body").style.overflow = "visible";
     mobileNavActive = false;
 }
+
+//Top banner parallax
+var bannerParallax = new ScrollMagic.Scene({
+    triggerElement: 'header',
+    triggerHook: 1,
+    duration: '200%'
+})
+.setTween(TweenMax.from('.header-background', 1, {y: '-50%', ease: Power0.easeNone}))
+.addTo(controller);
+
+//Learn section parallax
+var learnParallaxTl = new TimelineMax();
+learnParallaxTl
+    .from('.family-img', 1, {y: '30%', ease: Power0.easeNone}, 0)
+    .from('#learn .baseline-background', 1, {'height': '27rem', ease: Power0.easeNone}, 0)
+
+var learnParallax = new ScrollMagic.Scene({
+    triggerElement: '.family-img',
+    triggerHook: 1,
+    duration: '70%'
+})
+.setTween(learnParallaxTl)
+.addTo(controller);
+
+//Teaching section parallax
+var teachingParallax = new ScrollMagic.Scene({
+    triggerElement: '.book-img',
+    triggerHook: 1,
+    duration: '70%'
+})
+.setTween(TweenMax.from('.book-img', 1, {y: '20%', ease: Power0.easeNone}, 0))
+.addTo(controller)
+
 
 // Select all links with hashes
 $('a[href*="#"]')
